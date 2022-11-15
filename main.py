@@ -28,4 +28,4 @@ def llamadaAPI ():
     return f"<div align='left'><h1>Cinco pasos aleatorios de tutoriales de WikiHow</h1><br><ol><li>{datos['1']}</li><li>{datos['2']}</li><li>{datos['3']}</li><li>{datos['4']}</li><li>{datos['5']}</li></ol></div>"
 
 if __name__ == "__main__":
-    app.run ()
+    app.run (host='0.0.0.0', port=8001, debug=True, threaded=True)
